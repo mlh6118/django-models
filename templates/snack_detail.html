@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+{% extends 'base.html' %}
+
+    <body>
+        {% block content %}
+            <h3>Snack: {{ snack.name }}</h3>
+            <p>Description: {{ snack.description }}</p>
+            <p>Purchased by: {{ snack.purchaser }}</p>
+        {% endblock content %}
+    </body>
+
+</html>
